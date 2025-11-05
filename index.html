@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Usama · Portfolio</title>
+  <meta name="description" content="A clean, mobile-first portfolio built using only HTML and CSS.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <!-- Header / Nav -->
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="index.html" aria-label="Home">
+        <span class="logo-badge">U</span> Usama · Portfolio
+      </a>
+
+      <label for="nav-toggle" class="burger" aria-label="Open Menu">
+        <span></span><span></span><span></span>
+      </label>
+      <input id="nav-toggle" type="checkbox" aria-hidden="true">
+
+      <nav class="menu" aria-label="Primary">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Main -->
+  <main>
+    <section class="hero container">
+      <div>
+        <span class="kicker">Designer · Developer</span>
+        <h1 class="title">Hi, I'm Usama. I craft modern web experiences.</h1>
+        <p>I build fast, accessible, and delightful interfaces. Explore selected projects, learn more about me, or drop a message—I'd love to connect.</p>
+        <div class="cta">
+          <a class="btn" href="projects.html">View Projects</a>
+          <a class="btn secondary" href="#featured">Featured Work</a>
+        </div>
+      </div>
+      <div class="preview shadowed">
+        <img src="assets/images/one.svg" alt="Project preview collage" style="width:100%;height:auto;display:block">
+      </div>
+    </section>
+
+    <section id="featured" class="section">
+      <div class="container">
+        <h2 style="margin:.2rem 0 1rem">Featured Projects</h2>
+        <div class="grid">
+          <article class="card">
+            <img src="assets/images/two.svg" alt="Project 1 preview">
+            <h3>Sales Analytics Dashboard</h3>
+            <p class="meta">A crisp admin dashboard with KPIs, charts, and tables.</p>
+          </article>
+          <article class="card">
+            <img src="assets/images/three.svg" alt="Project 2 preview">
+            <h3>HRM System UI</h3>
+            <p class="meta">ShadCN-inspired components reproduced in pure CSS.</p>
+          </article>
+          <article class="card">
+            <img src="assets/images/four.svg" alt="Project 3 preview">
+            <h3>DealSaver Landing</h3>
+            <p class="meta">A conversion-focused hero with cards and CTAs.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="credits">
+        <span class="badge">Pure HTML + CSS</span>
+        <span class="badge mono">Responsive</span>
+        <span class="badge">No frameworks</span>
+      </div>
+      <p style="margin:.6rem 0 0">Inspiration & support materials:
+        <a href="https://dribbble.com" target="_blank" rel="noopener">Dribbble</a> ·
+        <a href="https://www.behance.net" target="_blank" rel="noopener">Behance</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

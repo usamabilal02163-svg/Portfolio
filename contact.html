@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Contact · Usama Portfolio</title>
+  <meta name="description" content="Get in touch with Usama">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container nav">
+      <a class="logo" href="index.html" aria-label="Home">
+        <span class="logo-badge">U</span> Usama · Portfolio
+      </a>
+
+      <label for="nav-toggle" class="burger" aria-label="Open Menu">
+        <span></span><span></span><span></span>
+      </label>
+      <input id="nav-toggle" type="checkbox" aria-hidden="true">
+
+      <nav class="menu" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="projects.html">Projects</a>
+        <a href="about.html">About</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1 class="title" style="font-size:2rem">Let's work together</h1>
+      <p class="meta" style="margin-bottom:1.2rem">Send a message and I’ll get back to you. (Form is non-functional by design—pure HTML/CSS.)</p>
+
+      <form class="card" action="#" method="post" style="padding:1.2rem">
+        <div class="form">
+          <div>
+            <label for="name">Your Name</label>
+            <input id="name" name="name" class="input" type="text" placeholder="Jane Doe" required>
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input id="email" name="email" class="input" type="email" placeholder="you@example.com" required>
+          </div>
+          <div>
+            <label for="budget">Budget</label>
+            <select id="budget" name="budget" class="select">
+              <option value="">Select a range</option>
+              <option value="1">$500 – $1,000</option>
+              <option value="2">$1,000 – $5,000</option>
+              <option value="3">$5,000 – $10,000</option>
+              <option value="4">$10,000+</option>
+            </select>
+          </div>
+          <div>
+            <label for="message">Message</label>
+            <textarea id="message" name="message" class="textarea" placeholder="Tell me about your project…" required></textarea>
+          </div>
+          <div style="display:flex;gap:.6rem;align-items:center;flex-wrap:wrap">
+            <button class="btn" type="submit">Send Message</button>
+            <span class="meta">This is an interactive element using only HTML & CSS.</span>
+          </div>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="credits">
+        <span class="badge">Pure HTML + CSS</span>
+        <span class="badge mono">Responsive</span>
+        <span class="badge">No frameworks</span>
+      </div>
+      <p style="margin:.6rem 0 0">Inspiration & support materials:
+        <a href="https://dribbble.com" target="_blank" rel="noopener">Dribbble</a> ·
+        <a href="https://www.behance.net" target="_blank" rel="noopener">Behance</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
